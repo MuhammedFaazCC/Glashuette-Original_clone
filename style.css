@@ -1,0 +1,653 @@
+@import url("https://p.typekit.net/p.css?s=1&k=uik5hnu&ht=tk&f=4531.4650&a=26871239&app=typekit&e=css");
+
+@font-face {
+font-family:"ff-meta-web-pro";
+src:url("https://use.typekit.net/af/824e1d/00000000000000003b9b06df/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/824e1d/00000000000000003b9b06df/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/824e1d/00000000000000003b9b06df/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+}
+
+@font-face {
+font-family:"ff-meta-web-pro";
+src:url("https://use.typekit.net/af/829fc9/00000000000000003b9b06da/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/829fc9/00000000000000003b9b06da/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/829fc9/00000000000000003b9b06da/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-ff-meta-web-pro { font-family: "ff-meta-web-pro",sans-serif; }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: ff-meta-web-pro;
+}
+main{
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    height: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    position: top;
+    display: flex;
+    justify-content: space-between;
+}
+.left-nav{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lang{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: .7s;
+}
+.mainlang{
+    margin-left: 10px;
+}
+.options{
+    width: 120px;
+    height: calc(30px*8);
+    background-color: white;
+    display: none;
+    margin: -30px;
+    transform: translate(-52px, 134px);
+}
+.sublang{
+    display: none;
+    margin-left: 30px;
+    width: 90px;
+    line-height: 28.2px;
+}
+.lang:hover{
+    
+    .sublang{
+        display: block;
+    }
+    .options{
+        display: block;
+    }
+}
+
+.fav{
+    width:110px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.fav:hover{
+    .favs{
+        color: #36608d;
+    }
+    .fa-regular{
+        color: #36608d;
+    }
+}
+.fav i{
+    color: black;
+}
+.fa-regular fa-star{
+    width: 20px;
+    height: 20px;
+}
+.favs{
+    margin-left: 10px;
+    color: #545454;
+}
+
+.mid-nav{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+    height: 61px;
+}
+
+.right-nav{
+    width: 20%;
+    height: 100%;
+    padding-left: 90px;
+    box-sizing:border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuhover{
+    width: fit-content;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.menuhover:hover{
+    border-radius: 5px;
+    border: black solid .8px;
+}
+.fa-solid fa-bars{
+    width: 20px;
+    height: 16.8px;
+}
+.menu{
+    margin:15px;
+}
+.main{
+    size: 100% auto;
+}
+.image{
+    width: 100%;
+    height: 670px;
+    background-image: url(https://www.glashuette-original.com/app/uploads/2024/12/Glashuette_Original-W19104010362-W13514021204.jpg);
+    background-size: 100% 1068px;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.addtocart{
+    width: 30px;
+    height: 32px;
+    background-color: white;
+    margin-bottom: 60px;
+    margin-right: 67px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    .modelname{
+        display: none;
+    }
+
+}
+.addtocart i{
+    size: 14px 14px;
+    display: block;
+}
+.addtocart:hover{
+    width: 224px;
+    height: fit-content;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 55px;
+    justify-content: left;
+    .fa-solid {
+        display: none;
+        z-index: -100;
+        size: 0;
+    }
+    .modelname{
+        display: block;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+}
+.ourbrand{
+    width: 100%;
+    height: 739px;
+    color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    padding-top: 74px;
+}
+.go{
+    font-size: 32px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.since{
+    font-size: 24px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.pics{
+    width: 1240px;
+    height: 484px;
+    padding-top: 78px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.pic1{
+    width: 396.8px;
+    height: 449px;
+    /* background-color: lightcoral; */
+    overflow: hidden;
+}
+
+.addtocart1{
+    width: 30px;
+    height: 32px;
+    background-color: white;
+    margin-bottom: 60px;
+    margin-right: 67px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    position: absolute;
+    transform: translate(355px, 10px);
+    .modelname{
+        display: none;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+}
+.addtocart1:hover{
+    width: 224px;
+    height: fit-content;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 55px;
+    justify-content: left;
+    transform: translate(161px, 10px);
+    .modelname{
+        display: block;
+    }
+    .fa-solid {
+        display: none;
+        z-index: -100;
+        size: 0;
+    }
+}
+.pic1:hover{
+    .cap{
+    transform: translateY(-31px);
+    }
+    #discfirst{
+        transform: translateY(-60px);
+    }
+}
+.pic{
+    width: 396.8px;
+    height: 406.21px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.cap{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    padding-left: 8px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    transition: 0.3s;
+}
+
+.text{
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+.innertext{
+    color: black;
+}
+.textdiv{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    border-top: 52px solid white;
+    
+
+}
+.gwa{
+    font-size: 21px;
+}
+.innertext1{
+    width: 780px;
+    height: 70px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.collections{
+    width: 100%;
+    height: 968px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 26px;
+}
+.viddiv{
+    width: 100%;
+    height: 521.4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 115px;
+}
+.video{
+    width: 1240px;
+    height: 521.4px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image:url(https://www.glashuette-original.com/app/uploads/2023/05/Glashuette_Original-the_brand-2-1920x1024.jpg) ;
+    background-position: center;
+    backface-visibility: inherit;
+    background-size: cover;
+    border-radius: 5px;
+}
+.vidimage{
+    padding: 1000px;
+}
+.playbutton{
+    width: 180px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+.playbutton:hover{
+    background-color: #212529;
+    .pv{
+        color: #fff;
+    }
+    .fa-solid fa-play{
+        color: #fff;
+    }
+}
+.discover{
+    width: 100%;
+    height: 484px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.newdiscover{
+    width: 1240px;
+    height: 484px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.vidcaption{
+    width: 1240px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: baseline ;
+}
+.subcaption{
+    font-size: .875rem;
+    color: #525252;
+    width: 1240px;
+    display: flex;
+    justify-content: baseline ;
+}
+#discfirst{
+    transform: translateY(-29px);
+}
+.aboutus{
+    width: 100%;
+    height: 650px;
+}
+.greybox{
+    width: 838.2px;
+    height: 570px;
+    border-radius: 5px;
+    background-color: #392f2c;
+    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    padding-bottom: 120px;
+}
+.greyboxhead{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #fff;
+    margin-left: 10px;
+}
+.buttonletter{
+    width: 396px;
+    font-size: 1.1rem;
+    line-height: 1.45rem;
+    margin-bottom: .25rem;
+    color: #fff;
+    margin: 10px;
+}
+.picbox{
+    width: 620px;
+    height: 410px;
+    border-radius: 5px;
+    transform: translate(760px, -490px);
+}
+.more{
+    width: fit-content;
+    font-size: 1.1rem;
+    line-height: 1.45rem;
+    margin-bottom: .25rem;
+    color: #fff;
+    margin: 10px;
+    border: 1.6px solid white;
+    border-radius: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12.8px;
+    padding-bottom: 12.8px;
+    z-index: 1000;
+}
+.more:hover{
+    background-color: #fff;
+    color: black;
+}
+.greybox1{
+    width: 838.2px;
+    height: 570px;
+    border-radius: 5px;
+    background-color: #392f2c;
+    transform: translate(541px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 100px;
+    padding-bottom: 120px;
+    row-gap: 10px;
+}
+.greyboxhead1{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #fff;
+    margin-right: 10px;
+    transform: translateX(332.2px);
+}
+.buttonletter1{
+    width: 396px;
+    font-size: 1.1rem;
+    line-height: 1.45rem;
+    margin-bottom: .25rem;
+    color: #fff;
+    transform: translateX(332.2px);
+}
+.picbox1{
+    width: 620px;
+    height: 410px;
+    border-radius: 5px;
+    transform: translate(142px, -490px);
+}
+.more1{
+    width: fit-content;
+    font-size: 1.1rem;
+    line-height: 1.45rem;
+    margin-bottom: .25rem;
+    color: #fff;
+    transform: translateX(323px);
+    margin: 10px;
+    border: 1.6px solid white;
+    border-radius: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12.8px;
+    padding-bottom: 12.8px;
+    z-index: 1000;
+}
+.more1:hover{
+    background-color: #fff;
+    color: black;
+}
+.papers{
+    width: 100%;
+    height: 352px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 30px;
+    padding-left: 134.6px;
+    padding-right: 134.6px;
+    margin-top: 50px;
+}
+.catnews1{
+    width: 585px;
+    height: 317px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1)33%, rgba(0, 0, 0, 0)100%), url('https://www.glashuette-original.com/app/uploads/2020/10/Glashuette_Original-where_time_is_created-427x300.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.catnews{
+    width: 585px;
+    height: 317px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1)33%, rgba(0, 0, 0, 0)100%), url('https://www.glashuette-original.com/app/uploads/2022/08/Glashuette_Original-Catalogue-1-427x300.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.titlesub{
+    color: #d9d9d9;
+    font-size: 1rem;
+}
+.titlet{
+    color: #fff;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+.buttons{
+    width: fit-content;
+    color: #fff;
+    padding: 10px;
+    border: 1.6px solid #fff;
+    border-radius: 5px;
+}
+.buttons:hover{
+    background-color: #fff;
+    color: black;
+}
+footer{
+    width: 100%;
+    height: 148.98px;
+    background-color: #392f2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tophalf{
+    width: 1270px;
+    height: 73.21px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    margin-left: 124.6px;
+    margin-right: 124.6px;
+    display: flex;
+    justify-content: space-between;
+}
+.lefttop{
+    display: flex;
+    column-gap: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.leftin{
+    color: #d9d9d9;
+    font-size: .8rem;
+}
+.leftin:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.righttop{
+    display: flex;
+    column-gap: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.righttop i{
+    color: #d9d9d9;
+    transition: color 0.3s;
+}
+.righttop i:hover{
+    color: #fff;
+}
+.divline{
+    width: 1238px;
+    height: 0px;
+    border: 0.8px solid #9b9595;
+}
+.bottomhalf{
+    width: 1270px;
+    height: 59.763px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 16px;
+    margin-left: 124.6px;
+    margin-right: 124.6px;
+    display: flex;
+    justify-content: space-between;
+}
+.leftbottom{
+    display: flex;
+    column-gap: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.rightbottom{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.footimg{
+    width: 20px;
+    height: 20px;
+}
+.footimg:hover{
+    color: #fff;
+}
